@@ -15,13 +15,13 @@ namespace Chess.Classes.board
 
         public Board()
         {
-            for (int i = 0; i < 8; i++)
+            for (int i = 0; i < boardSquares.GetLength(0); i++)
             {
                 int column = 0;
                 SquareColour currentColour = (i % 2 == 0) ? SquareColour.LIGHT : SquareColour.DARK;
                 foreach (File file in Enum.GetValues(typeof(File)))
                 {
-                    Square newSquare = new Square(currentColour, new Location(file, 8-i), false);
+                    Square newSquare = new Square(currentColour, new Location(file, boardSquares.GetLength(0)-i), false);
                     boardSquares[i, column] = newSquare;
                     currentColour = (currentColour == SquareColour.DARK) ? SquareColour.LIGHT : SquareColour.DARK;
                     column++;

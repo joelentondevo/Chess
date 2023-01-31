@@ -10,7 +10,7 @@ namespace Chess.Classes.squares
     public class Square
     {
         private readonly SquareColour squareColour;
-        private readonly common.Location location;
+        private readonly Location location;
         private bool isOccupied;
 
         public Square(SquareColour squareColour, Location location, bool isOccupied)
