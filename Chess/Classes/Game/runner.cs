@@ -17,6 +17,7 @@ namespace Chess.Classes.runner
         {
             Board board = new Board();
             board.PrintSquareDetails();
+            System.Diagnostics.Debug.WriteLine(board);
         }
     }
 }

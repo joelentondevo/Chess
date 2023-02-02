@@ -5,12 +5,13 @@ using System.Text;
 using System.Threading.Tasks;
 using Chess.Classes.common;
 using Chess.Classes.squares;
+using Chess.Classes.board;
 using Chess.Classes.piece;
 using File = Chess.Classes.common.File;
 
 namespace Chess.Classes.piece
 {
-    public class Knight : Piece.Piece
+    public class Knight : Piece.Piece, Movement
     {
         public Knight(PieceColour pieceColour, Location location, bool isAlive)
         {
@@ -18,6 +19,16 @@ namespace Chess.Classes.piece
             this.pieceType = PieceType.KNIGHT;
             this.location = location;
             this.isAlive = false;
+        }
+        public List<Location> GetValidMoves(Board board)
+        {
+            System.Diagnostics.Debug.WriteLine(this.getPieceType() + "GetValidMoves");
+            return null;
+        }
+
+        public void MakeMove(Square square)
+        {
+            System.Diagnostics.Debug.WriteLine(this.getPieceType() + "MakeMove");
         }
     }
 }
