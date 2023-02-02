@@ -14,7 +14,7 @@ namespace Chess.Piece
     {
         protected PieceColour pieceColour;
         protected PieceType pieceType;
-        protected Location location;
+        protected Square square;
         protected bool isAlive;
 
 
@@ -28,9 +28,9 @@ namespace Chess.Piece
             return pieceType;
         }
 
-        public Location getLocation()
+        public Square getSquare()
         {
-            return location;
+            return square;
         }
 
         public bool getisAlive()
@@ -38,9 +38,9 @@ namespace Chess.Piece
             return isAlive;
         }
 
-        public void setLocation(Location location)
+        public void setSquare(Square square)
         {
-            this.location = location;
+            this.square = square;
         }
 
         public void setAlive(bool isAlive)

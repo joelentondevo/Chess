@@ -14,7 +14,7 @@ namespace Chess.Classes.piece
     public interface Movement
     {
 
-        List<Location> GetValidMoves(Board board);
+        List<Location> GetValidMoves(Board board, Square square);
         void MakeMove(Square square);
     }
 }

@@ -21,7 +21,7 @@ namespace Chess.Classes.piece
             this.isAlive = false;
         }
 
-        public List<Location> GetValidMoves(Board board)
+        public List<Location> GetValidMoves(Board board, Square square)
         {
             System.Diagnostics.Debug.WriteLine(this.getPieceType() + "GetValidMoves");
             return null;
