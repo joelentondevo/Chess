@@ -13,11 +13,11 @@ namespace Chess.Classes.piece
 {
     public class Bishop : Piece.Piece
     {
-        public Bishop(PieceColour pieceColour, Location location, bool isAlive)
+        public Bishop(PieceColour pieceColour, Square square, bool isAlive)
         {
             this.pieceColour = pieceColour;
             this.pieceType = PieceType.BISHOP;
-            this.location = location;
+            this.square = square;
             this.isAlive = false; 
         }
         public List<Location> GetValidMoves(Board board, Square square)

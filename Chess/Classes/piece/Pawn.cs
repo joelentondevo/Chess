@@ -13,11 +13,11 @@ namespace Chess.Classes.piece
 {
     public class Pawn : Piece.Piece, Movement
     {
-        public Pawn(PieceColour pieceColour, Location location, bool isAlive)
+        public Pawn(PieceColour pieceColour, Square square, bool isAlive)
         {
             this.pieceColour = pieceColour;
             this.pieceType = PieceType.PAWN;
-            this.location = location;
+            this.square = square;
             this.isAlive = false;
         }
 

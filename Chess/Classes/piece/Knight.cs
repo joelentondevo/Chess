@@ -13,11 +13,11 @@ namespace Chess.Classes.piece
 {
     public class Knight : Piece.Piece, Movement
     {
-        public Knight(PieceColour pieceColour, Location location, bool isAlive)
+        public Knight(PieceColour pieceColour, Square square, bool isAlive)
         {
             this.pieceColour = pieceColour;
             this.pieceType = PieceType.KNIGHT;
-            this.location = location;
+            this.square = square;
             this.isAlive = false;
         }
         public List<Location> GetValidMoves(Board board, Square square)
